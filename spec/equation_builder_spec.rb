@@ -30,6 +30,11 @@ describe EquationBuilder do
     end
   end
 
+  context 'with long equation' do
+    subject { EquationBuilder.new([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0, ['*', '-']) }
+    its(:solve) { should == '1*2*3*4*5-6*9-7*8-10' }
+  end
+
   context 'equation not found' do
     subject { EquationBuilder.new([1, 2], 4, ['+']) }
     its(:solve) { should == '' }
