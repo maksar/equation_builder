@@ -20,8 +20,11 @@ Gem::Specification.new do |s|
     ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
+    "LICENSE.txt",
+    "README.rdoc",
     "Rakefile",
     "VERSION",
+    "equation_builder.gemspec",
     "lib/equation_builder.rb",
     "spec/equation_builder_spec.rb",
     "spec/spec_helper.rb"
