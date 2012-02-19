@@ -1,8 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rake'
-
-gem 'activesupport', :require => false
+group :development do
+  gem 'rake'
+  gem 'bundler'
+  gem 'jeweler'
+end
 
 group :test do
   gem 'rspec'
